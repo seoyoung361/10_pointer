@@ -3,19 +3,14 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+void main(int argc, char *argv[]) {
 	
-	int i=10;
-	char c='a';
-	
-	int *iptr;
-	iptr = &i;
-	char *cptr = &c;
-	int *iptr2 =iptr;
-	
-	printf("i:%p\n%p (size:%i)\n", iptr, &i, sizeof(iptr));
-	printf("c:%p\n%p (size:%i)\n",cptr, &c, sizeof(cptr));
-	printf("iptr:%p, %i\n", iptr2, *iptr2);
+ int i=300;
+ 
+ int *pi=&i;
+ char *pc=&i;
+ 
+ printf("%i, %i, %i\n", i, *pi, *pc);
 	
 	
 	
